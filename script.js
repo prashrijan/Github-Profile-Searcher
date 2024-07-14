@@ -5,7 +5,8 @@ const profileContainer = document.querySelector("#profile-container")
 
 
 searchBtn.addEventListener("click", () => {
-    const userId = userInput.value;
+    const userId = String((userInput.value)).toLowerCase();
+    console.log(userId);
     if(userId){
         makeRequest('GET', apiUrl + userId)
         .then(data => {
