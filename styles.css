@@ -1,0 +1,118 @@
+/* Reset some default styles */
+body, h1, p, input, button, h2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #24292e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#search-box {
+    width: 90%;
+    max-width: 500px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #24292e;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0366d6;
+}
+
+#profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Profile card styling */
+.profile-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-details {
+    margin-top: 1rem;
+}
+
+.profile-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-details p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+}
