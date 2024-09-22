@@ -20,6 +20,10 @@ header {
     padding: 1rem 0;
 }
 
+header p{
+    margin-top : 10px;
+}
+
 /* Main content styling */
 main {
     flex: 1;
